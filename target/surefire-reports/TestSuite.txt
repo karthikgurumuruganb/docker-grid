@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 38.911 sec <<< FAILURE! - in TestSuite
+dockerFirefox1(docker_grid.DockerFirefoxTest1)  Time elapsed: 6.727 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7DP6FAQ', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at docker_grid.DockerFirefoxTest1.dockerFirefox1(DockerFirefoxTest1.java:25)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4444
+	at docker_grid.DockerFirefoxTest1.dockerFirefox1(DockerFirefoxTest1.java:25)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at docker_grid.DockerFirefoxTest1.dockerFirefox1(DockerFirefoxTest1.java:25)
+
+dockerChrome3(docker_grid.DockerChromeTest3)  Time elapsed: 6.729 sec  <<< FAILURE!
+org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7DP6FAQ', ip: '192.168.0.104', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: driver.version: RemoteWebDriver
+	at docker_grid.DockerChromeTest3.dockerChrome3(DockerChromeTest3.java:25)
+Caused by: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:4444
+	at docker_grid.DockerChromeTest3.dockerChrome3(DockerChromeTest3.java:25)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at docker_grid.DockerChromeTest3.dockerChrome3(DockerChromeTest3.java:25)
+
